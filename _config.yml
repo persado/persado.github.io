@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 name: Persado Engineering Blog
 description: Code Matters
-avatar: https://raw.githubusercontent.com/persado/persado.github.io/master/assets/persado-logo-black.png
+avatar: https://raw.githubusercontent.com/persado/persado.github.io/master/assets/images/persado-logo-black.png
 
 title: Your awesome title
 email: your-email@example.com
