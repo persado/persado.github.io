@@ -79,3 +79,4 @@ Here's what the final result would look like in the Gitlab UI:
 
 With this file in place, every time you push a change to Gitlab, the CI pipeline will detect and compile a freshly R package that you can download from the UI and have a record of over time. You can now grant members on your team access to your project so that they can download the compiled package as well!
 
+Written by: Jose Santiago, Director of Engineering - Enterprise Architecture
