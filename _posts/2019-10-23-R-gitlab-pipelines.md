@@ -2,6 +2,7 @@
 layout: post
 title: Using Gitlab CI to Build Your R Package
 excerpt: Here's how to use a Gitlab CI environment with R to make building, hosting, and sharing packages with your team incredibly simple.
+author: jose_santiago
 ---
 
 ## What is R?
@@ -78,5 +79,3 @@ Here's what the final result would look like in the Gitlab UI:
 ![alt text]({{ site.url }}/assets/images/r-ci-pipeline-example.png "Gitlab CI R Pipeline Sample")
 
 With this file in place, every time you push a change to Gitlab, the CI pipeline will detect and compile a freshly R package that you can download from the UI and have a record of over time. You can now grant members on your team access to your project so that they can download the compiled package as well!
-
-Written by: Jose Santiago, Director of Engineering - Enterprise Architecture

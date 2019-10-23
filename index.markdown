@@ -10,7 +10,16 @@ layout: default
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <div class="summary-date">{{ post.date | date: "%B %e, %Y" }}</div>
+      <div class="summary-date">
+        {{ post.date | date: "%B %e, %Y" }}
+        {% assign author = site.data.authors[post.author] %}
+        {% if author %}
+          <span>
+            <!-- Personal Info. -->
+            by {{ author.name }}
+          </span>
+        {% endif %}
+      </div>
 
       <div class="entry">
         {{ post.excerpt }}
