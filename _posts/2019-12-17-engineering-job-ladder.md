@@ -5,6 +5,31 @@ excerpt: Our engineering job ladder
 author: yoni_baciu
 ---
 
+<table class="job-ladder-table-summary">
+  <tr>
+    <td>
+      <div style="float:right; font-size: 300%;">&#8680;</div>
+      <div style="margin-right: 70px;">Individual Contributor Track</div>
+    </td>
+    <td>1<br/>Software Engineer</td>
+    <td>2<br/>Software Engineer</td>
+    <td>3<br/>Senior Software Engineer</td>
+    <td>4<br/>Staff Software Engineer</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>
+      <div style="float:right; font-size: 300%;">&#8680;</div>
+      <div style="margin-right: 50px;">Manager Track</div>
+    </td>
+    <td></td>
+    <td></td>
+    <td>1<br/>Engineering Team Lead</td>
+    <td>2<br/>Director of Engineering</td>
+    <td>3<br/>VP Engineering</td>
+  </tr>
+</table>
+
 ## Individual Track
 
 <table class="job-ladder-table">

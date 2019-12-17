@@ -20,3 +20,14 @@ table.job-ladder-table {
   }
 }
 
+table.job-ladder-table-summary {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border: 1px solid black;
+
+  td {
+    width: 15%;
+    border: 1px solid black;
+    padding: 10px;
+  }
+}
