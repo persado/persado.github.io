@@ -8,8 +8,8 @@ author: yoni_baciu
 <table class="job-ladder-table-summary">
   <tr>
     <td>
-      <div style="float:right; font-size: 300%;">&#8680;</div>
-      <div style="margin-right: 70px;">Individual Contributor Track</div>
+      <div style="float:right; font-size: 250%;">&#8680;</div>
+      <div style="margin-right: 40px;">Individual Contributor Track</div>
     </td>
     <td>1<br/>Software Engineer</td>
     <td>2<br/>Software Engineer</td>
@@ -19,8 +19,8 @@ author: yoni_baciu
   </tr>
   <tr>
     <td>
-      <div style="float:right; font-size: 300%;">&#8680;</div>
-      <div style="margin-right: 50px;">Manager Track</div>
+      <div style="float:right; font-size: 250%;">&#8680;</div>
+      <div style="margin-right: 40px;">Manager Track</div>
     </td>
     <td></td>
     <td></td>
