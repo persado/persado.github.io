@@ -36,3 +36,9 @@ table.job-ladder-table-summary {
     padding: 10px;
   }
 }
+
+@media screen and (max-width: 640px) {
+  table.job-ladder-table {
+    font-size: 80%;
+  }
+}
