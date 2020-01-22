@@ -5,8 +5,6 @@ excerpt: How to speed up your RSpec boot time, and how to profile it when someth
 author: akshith_yellapragada
 ---
 
-# RSpec Boot Up Takes Longer Than Your Webpack? No Longer
-
 ## Intro
 
 TDD is a very enjoyable way to code, as a way of always receiving rapid feedback that what you're doing is most likely correct while checking for regressions very quickly. The issue then becomes when your Specs take longer to run, or in our case, boot up. 
