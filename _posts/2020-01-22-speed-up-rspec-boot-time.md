@@ -96,7 +96,7 @@ We'll need a few tools to help with this, [stackprof](https://github.com/tmm1/st
 
 Stackprof is a sampling call-stack profiler built for Ruby. What that means is we'll execute the code, and then take samples of the call stack as it is at each point, and then lets you know what is actually happening in your code.
 
-Stackprof-webnav is just a helper to view the stack trace dumps in a browser, Stackprof itself already has built in ways, but this just makes it easier.
+Stackprof-webnav is just a helper to view the stack trace dumps in a browser. Stackprof itself already has built in ways, but this just makes it easier.
 
 Here's a simple snippet I used to get the stack traces dumped, I added this into my `spec_helper.rb`.
 The commented out paths were just for me to have an easy way to split up the folders for different stack traces, or for a before and after.
