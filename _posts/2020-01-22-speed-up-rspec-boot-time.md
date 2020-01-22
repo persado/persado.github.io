@@ -94,7 +94,7 @@ This is where it gets really interesting. We need to profile our specs themselve
 
 We'll need a few tools to help with this, [stackprof](https://github.com/tmm1/stackprof) and [stackprof-webnav](https://github.com/alisnic/stackprof-webnav).
 
-Stackprof is a sampling call-stack profiler built for Ruby. What that means is we'll execute the code, and then take samples of the call stack as it is at each point, and then lets you know what is actually happening in your code.
+Stackprof is a sampling call-stack profiler built for Ruby. What that means is we'll execute the code, take samples of the call stack as it is at each point, and then will let you know what is actually happening in your code.
 
 Stackprof-webnav is just a helper to view the stack trace dumps in a browser. Stackprof itself already has built in ways, but this just makes it easier.
 
