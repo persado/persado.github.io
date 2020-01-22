@@ -9,7 +9,7 @@ author: akshith_yellapragada
 
 ## Intro
 
-TDD is a very enjoyable way to code, always getting quick feedback that what you're doing is most likely correct, and able to check for regressions very quickly. The issue then becomes when your Specs take longer to run, or in our case, longer to boot up. 
+TDD is a very enjoyable way to code, as a way of always receiving rapid feedback that what you're doing is most likely correct while checking for regressions very quickly. The issue then becomes when your Specs take longer to run, or in our case, boot up. 
 
 For example, a standard unit test for one of our Models.
 
