@@ -19,7 +19,7 @@ Finished in 1.15 seconds (files took 12.04 seconds to load)
 ```
 
 Having a 10+ second feedback loop, even for one simple unit test really made TDD inefficient.
-It made the TDD process not enjoyable, and also became very easy to break concentration losing even more time.
+This made the TDD process not enjoyable, and it also became very easy to break concentration losing even more time.
 
 My team recently made it a major initiative to start writing a lot more tests for everything, so being able to speed the boot process up would really help with getting that started.
 
