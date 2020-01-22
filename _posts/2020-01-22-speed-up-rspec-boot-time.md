@@ -120,7 +120,7 @@ These files will get generated whenever you run RSpec, so you'll want to try out
 Let's look at the no_spring version first, just so we have a general idea of the benchline for all of this.
 ![alt text]({{ site.url }}/assets/images/2020-01-22-speed-up-rspec-boot-time/no_spring_profile.png "The stacktrace before adding Spring.")
 
-This all seems fine now, let's check the with_spring version next and see if there's anything odd to be noticed.
+This all seems fine now. Let's check the with_spring version next and see if there's anything odd to be noticed.
 ![alt text]({{ site.url }}/assets/images/2020-01-22-speed-up-rspec-boot-time/with_spring_profile.png "The stack trace after adding Spring.")
 
 Yep, right there at the very top, there's the issue. Spring packaged everything in, including Datadog.
