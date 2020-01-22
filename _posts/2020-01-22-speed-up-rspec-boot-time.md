@@ -80,7 +80,7 @@ end
 
 Then run `bundle install` and `bundle exec spring binstub rspec` to create `bin/rspec`.
 
-Now, lets try this again and look at the load time, using the spring command:
+Now, let's try this again and observe the load time, this time using the spring command:
 
 `spring rspec spec/benchmarks/empty_spec.rb`
 `Finished in 1 second (files took 0.70336 seconds to load)`
