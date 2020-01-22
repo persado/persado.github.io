@@ -100,7 +100,7 @@ Stackprof-webnav is just a helper to view the stack trace dumps in a browser. St
 
 Here's a simple snippet I used to get the stack traces dumped, which I added into my `spec_helper.rb`.
 The commented out paths were just for me to have an easy way to split up the folders for different stack traces, or for a before and after.
-You'll may also need to make these folders in the `rails_app_root/tmp/` directory if you get any errors.
+You may also need to make these folders in the `rails_app_root/tmp/` directory if you get any errors.
 
 ```ruby
 RSpec.configure do |config|
