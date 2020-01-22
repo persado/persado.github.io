@@ -65,7 +65,7 @@ The more efficient option felt like using [Spring](https://github.com/rails/spri
 
 ## Adding Spring
 
-This part is pretty straightforward, I based a lot of what I did off of this [other blog post](https://schwad.github.io/ruby/rails/testing/2017/08/14/50-times-faster-rspec-loading.html) and the [spring documentation](https://github.com/rails/spring).
+This part is pretty straightforward. I based a lot of what I did off of this [other blog post](https://schwad.github.io/ruby/rails/testing/2017/08/14/50-times-faster-rspec-loading.html) and the [spring documentation](https://github.com/rails/spring).
 
 
 Step 1 is to add these two gems to the gemfile:
