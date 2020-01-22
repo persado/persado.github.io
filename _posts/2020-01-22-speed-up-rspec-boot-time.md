@@ -61,7 +61,7 @@ There must be a way to either make this better, or cache it.
 
 The first option that popped to mind is going through the Gemfile, adding `require: false` to the gems that didn't need to be loaded every time, and then specifically require them in the app. That could've worked, but honestly it's a lot of work, and possibly wouldn't bring the speed down that much.
 
-The more efficient option felt like using [Spring](https://github.com/rails/spring) to cache the app's dependencies and preload it, but if that doesn't work then it would be possible to start removing the longest to load ones.
+The more efficient option felt like using [Spring](https://github.com/rails/spring) to cache the app's dependencies and preload it, but if that doesn't work then it would be possible to start removing the longest loading ones.
 
 ## Adding Spring
 
