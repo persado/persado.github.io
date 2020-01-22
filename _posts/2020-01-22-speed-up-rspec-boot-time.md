@@ -32,7 +32,7 @@ We first need to profile and see what's happening before we can fix it, [this](h
 
 Another option is the [Bumbler gem](https://github.com/nevir/Bumbler), if the snippet doesn't work for you.
 
-The first step was to build to build an empty spec file, so that we can check purely the RSpec loading and run time.
+The first step was to build an empty spec file to purely check RSpec's loading and run time.
 
 ```ruby
 require 'rails_helper'
