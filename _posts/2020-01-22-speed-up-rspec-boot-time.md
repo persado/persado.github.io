@@ -11,7 +11,7 @@ author: akshith_yellapragada
 
 TDD is a very enjoyable way to code, as a way of always receiving rapid feedback that what you're doing is most likely correct while checking for regressions very quickly. The issue then becomes when your Specs take longer to run, or in our case, boot up. 
 
-For example, a standard unit test for one of our Models.
+For example, a standard unit test for one of our Models:
 
 ```
 Finished in 1.15 seconds (files took 12.04 seconds to load)
