@@ -129,7 +129,7 @@ This is something that would've been hard to catch without profiling, since ther
 There's a pretty straightforward fix for this issue: 
 1. Move Datadog gem (`ddtrace`) into the Production-Only group of our Gemfile.
 2. Check our code for everywhere we use Datadog.
-3.  Place all code that touches Datadog into a block that only runs it if we're on Production, or have access to Datadog.
+3. Place all code that touches Datadog into a block that only runs it if we're on Production, or have access to Datadog.
 
 In this app, we only had 2 locations, one in the initializer and one in a domain logic specific area for measurement purposes.
 
