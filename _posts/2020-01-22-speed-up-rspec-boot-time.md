@@ -98,7 +98,7 @@ Stackprof is a sampling call-stack profiler built for Ruby. What that means is w
 
 Stackprof-webnav is just a helper to view the stack trace dumps in a browser. Stackprof itself already has built in ways, but this just makes it easier.
 
-Here's a simple snippet I used to get the stack traces dumped, I added this into my `spec_helper.rb`.
+Here's a simple snippet I used to get the stack traces dumped, which I added into my `spec_helper.rb`.
 The commented out paths were just for me to have an easy way to split up the folders for different stack traces, or for a before and after.
 You'll may also need to make these folders in the `rails_app_root/tmp/` directory if you get any errors.
 
