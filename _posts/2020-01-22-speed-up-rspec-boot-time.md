@@ -78,7 +78,7 @@ group :test, :development do
 end
 ```
 
-And to `bundle install` and run `bundle exec spring binstub rspec` to create `bin/rspec`.
+Then run `bundle install` and `bundle exec spring binstub rspec` to create `bin/rspec`.
 
 Now, lets try this again and look at the load time, using the spring command:
 
