@@ -88,7 +88,7 @@ Now, let's try this again and observe the load time, this time using the spring 
 Great, it's loading so quickly! Wow! Except this would be a pretty boring blog post if the take away was "Just Use Spring". 
 Look at the run time for this same spec, it's now taking almost an extra 40% of time!
 
-This is where it gets really interesting. We need to profile our specs themselves and see where the issues lay.
+This is where it gets really interesting. We need to profile our specs themselves and see where the issues lie.
 
 ## How To Profile Running Specs
 
