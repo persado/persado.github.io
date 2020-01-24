@@ -133,12 +133,14 @@ In this app, we only had 2 locations, one in the initializer and one in a domain
 
 Now let's go ahead and regenerate the spring rspec stub, and try this again.
 
-The before, just for context.
-`bundle exec rspec specs/benchmarks/empty_spec.rb`
-`Load: 13.00 seconds, Run: 0.634441 seconds.`
-
-And the after.
-`spring rspec spec/benchmarks/empty_spec.rb`
-`Load: 0.63126 seconds, Run: 0.53728 seconds.`
-
+The before, just for context:
+```
+$ bundle exec rspec specs/benchmarks/empty_spec.rb
+Load: 13.00 seconds, Run: 0.634441 seconds.
+```
+And the after:
+```
+$ spring rspec spec/benchmarks/empty_spec.rb
+Load: 0.63126 seconds, Run: 0.53728 seconds.
+```
 There we go, that's perfect. Similar run times, drastically faster load times.
