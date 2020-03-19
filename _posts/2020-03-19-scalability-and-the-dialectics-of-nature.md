@@ -29,4 +29,4 @@ Dialectic - [https://en.wikipedia.org/wiki/Dialectic](https://en.wikipedia.org/w
 Dialectical Materialism - [https://en.wikipedia.org/wiki/Dialectical_materialism](https://en.wikipedia.org/wiki/Dialectical_materialism)  
 Dialectics of Nature - [https://en.wikipedia.org/wiki/Dialectics_of_Nature](https://en.wikipedia.org/wiki/Dialectics_of_Nature)  
 Sorites Paradox (Heap Paradox) - [https://en.wikipedia.org/wiki/Sorites_paradox](https://en.wikipedia.org/wiki/Sorites_paradox)  
-Scalability - [https://en.wikipedia.org/wiki/Scalability](https://en.wikipedia.org/wiki/Scalability) - This definition of scalability is somewhat lacking in my humble opinion as it implies that one can simply add resources in a linear fashion without mentioning breaking points where a transition in quality must occur.
+Scalability - [https://en.wikipedia.org/wiki/Scalability](https://en.wikipedia.org/wiki/Scalability)
