@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Parallels between system scalability and the Dialectics of Nature
-excerpt: Parallels between system scalability and the second "law" proposed in Engel's work - The Dialectics of Nature
+excerpt: Parallels between system scalability and the second law proposed in Engel's work - The Dialectics of Nature
 author: yoni_baciu
 ---
 
