@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Parallels between system scalability and the Dialectics of Nature
-excerpt: Parallels between system scalability and the second law proposed in Engel's work - The Dialectics of Nature
+excerpt: Parallels between system scalability and the second 'law' proposed in Engel's work - The Dialectics of Nature
 author: yoni_baciu
 ---
 
@@ -23,8 +23,9 @@ Similar to water transitioning between states, at certain points in the ever inc
 <br/>
 <br/>
 <br/>
-**Further reading:**
+**Further reading & Definitions:**
 
+Dialectic - [https://en.wikipedia.org/wiki/Dialectic](https://en.wikipedia.org/wiki/Dialectic)  
 Dialectical Materialism - [https://en.wikipedia.org/wiki/Dialectical_materialism](https://en.wikipedia.org/wiki/Dialectical_materialism)  
 Dialectics of Nature - [https://en.wikipedia.org/wiki/Dialectics_of_Nature](https://en.wikipedia.org/wiki/Dialectics_of_Nature)  
 Sorites Paradox (Heap Paradox) - [https://en.wikipedia.org/wiki/Sorites_paradox](https://en.wikipedia.org/wiki/Sorites_paradox)  
