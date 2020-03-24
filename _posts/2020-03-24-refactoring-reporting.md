@@ -17,40 +17,42 @@ For a while, we made due. But as time went on and we accumulated more and more d
 
 Rollup tables and materialized views are both ways of denormalizing data to make that data easier to handle at the aggregate level. Our rollup table represented an aggregation of about 15 other tables, with ~40 distinct columns. Anytime we wrote to one of these dependent tables, we needed to fire off a Rails callback to update the rollup table. Here is an excerpt of a module we included in every related model:
 
-      included do
-	    after_save :queue_report_update
-	  end
-	  ...
-	  def queue_report_update
-	    if changes.keys.select { |key| update_triggers.include?	(key) }.any?
-		  self.delay(queue: 'data_sync').update_reports(changes)
-		end
-      end
+```ruby
+included do
+  after_save :queue_report_update
+end
+...
+def queue_report_update
+  if changes.keys.select { |key| update_triggers.include?(key) }.any?
+    self.delay(queue: 'data_sync').update_reports(changes)
+  end
+end
+```
 
 A materialized view, on the other hand, is simply a cached result set from a predefined query. (At the time of this project, we had recently migrated from MySQL to PostgreSQL, which meant that materialized views were a feature newly available to us). Because a materialized view is just a query result set, there is no need to make meticulous updates to it. Simply “refreshing” the materialized view re-runs the query and regenerates the entire result set. The declarative nature of this type of denormalization means that this approach is both sturdy and simple.
 
 Our first step in the refactor process was to rewrite our main rollup table as a collection of materialized views. Anything that could be calculated in a straightforward way went into the top-level materialized view. Anything that required more calculation — especially grouped calculation — we would split out into smaller materialized views which the top-level view could pull from. For example:
 
+```sql
+-- top-level mat view
+SELECT
+CASE
+  WHEN results_agg.approved_at IS NULL THEN false
+  ELSE true
+END AS has_results
+FROM shipments
+LEFT JOIN results_agg ON results_agg.shipment_id = shipments.id
 
-	// top-level mat view
-	SELECT
-	CASE
-		WHEN results_agg.approved_at IS NULL THEN false
-		ELSE true
-	END AS has_results
-	FROM shipments
-	LEFT JOIN results_agg ON results_agg.shipment_id = shipments.id
-
-    // results_agg mat view
-    SELECT
-		uploads.shipment_id,
-		min(results.start_date) AS start_date,
-		max(results.end_date) AS end_date
-	FROM results
-	JOIN uploads ON uploads.id = results.upload_id
-	JOIN shipments ON uploads.shipment_id = shipments.id
-	GROUP BY uploads.shipment_id;
-
+-- results_agg mat view
+SELECT
+  uploads.shipment_id,
+  min(results.start_date) AS start_date,
+  max(results.end_date) AS end_date
+FROM results
+JOIN uploads ON uploads.id = results.upload_id
+JOIN shipments ON uploads.shipment_id = shipments.id
+GROUP BY uploads.shipment_id;
+```
 
 ## Step 2: Convert ActiveRecord to Raw SQL
 
@@ -60,23 +62,26 @@ While ActiveRecord guarantees efficient SQL statements, it does not guarantee th
 
 So, when we had the opportunity to overhaul this section, we decided that everything would be organized into named methods that lived in service objects and returned raw, formatted SQL. Here is an example of one service's top-level query:
 
-    def generate_sql
-      <<-SQL
-        SELECT
-          body,
-          client_id,
-          client_name,
-          account_id,
-          account_name
-        FROM reports
-        #{process_joins}
-        WHERE
-          #{process_filters} AND
-          archived_at IS NULL
-        #{process_order_params}
-        #{process_pagination_params}
-      SQL
-    end
+```ruby
+def generate_sql
+  <<-SQL
+    SELECT
+      body,
+      client_id,
+      client_name,
+      account_id,
+      account_name
+    FROM reports
+      #{process_joins}
+    WHERE
+      #{process_filters} AND
+      archived_at IS NULL
+    #{process_order_params}
+    #{process_pagination_params}
+  SQL
+end
+```
+
 The top-level query is formatted as easily-recognizable SQL, and each of the dependent methods returns formatted SQL as well. Again, this change was not primarily because ActiveRecord, as a DSL, seriously lacked the functionality we needed (even though we had to do a bit of monkey-patching that certainly complicated things). It was mostly because our workflow in this section already depended heavily on converting the AR to raw SQL, and the long, unformatted and aliased strings that AR returned were difficult to work with.
 
 ## Step 3: Break Complex Subqueries into Materialized Views
