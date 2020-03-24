@@ -5,8 +5,6 @@ excerpt: How — and why — we migrated from ActiveRecord and Rollup Tables to 
 author: chrisruenes1
 ---
 
-# Refactoring our Reporting Section
-
 When I first started working at Persado, there were three main problems with our reporting section:
 
 1. When there were bugs in this section, it often took 1-2 days for a developer to identify and fix them
