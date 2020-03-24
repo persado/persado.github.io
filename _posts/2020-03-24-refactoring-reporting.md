@@ -2,7 +2,7 @@
 layout: post
 title: Refactoring our Reporting Section
 excerpt: How — and why — we migrated from ActiveRecord and Rollup Tables to Raw SQL and Materialized Views
-author: chrisruenes1
+author: chris_ruenes
 ---
 
 When I first started working at Persado, there were three main problems with our reporting section:
