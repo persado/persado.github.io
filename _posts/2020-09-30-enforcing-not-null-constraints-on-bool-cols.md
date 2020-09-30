@@ -34,25 +34,27 @@ For fields that should have a not-null constraint (in our case, this was all of 
 
 To save future developers the headache of having to do this again several years down the line, we added a database-level test that checks whether we have any boolean columns that allow nulls. If this test fails, the culpable code cannot be merged in. For context, we use PostgreSQL and RSpec.
 
-First, we find all boolean columns that are nullable:
-
-```sql
-SELECT information_schema.columns.table_name, column_name
-FROM information_schema.columns
-JOIN information_schema.tables ON information_schema.tables.table_name = information_schema.columns.table_name
-WHERE table_type = 'BASE TABLE'
-  AND information_schema.columns.table_schema = 'public'
-  AND data_type = 'boolean'
-  AND is_nullable = 'YES'
-ORDER BY table_name;
-```
-We specify the `table_type` above to exclude any duplicates coming from materialized views.
-
-Next, we make sure that this `nullable_columns` result is empty:
+First, we find all boolean columns that are nullable. We specify the `table_type` to exclude any duplicates coming from materialized views. Then we make sure that this `nullable_columns` result is empty. We make room for exceptions in case our application does one day contain a ternary system that is best expressed through a nullable boolean column.
 
 ```ruby
-exceptions = [] # Add exceptions here of the form [table_name, column_name], although ideally there should be none.
-expect(nullable_columns - exceptions).to eq([])
+describe "DB" do
+  it "does not have boolean columns that allow nulls" do
+    nullable_columns_sql = <<-SQL
+      SELECT information_schema.columns.table_name, column_name
+      FROM information_schema.columns
+      JOIN information_schema.tables ON information_schema.tables.table_name = information_schema.columns.table_name
+      WHERE table_type = 'BASE TABLE'
+        AND information_schema.columns.table_schema = 'public'
+        AND data_type = 'boolean'
+        AND is_nullable = 'YES'
+      ORDER BY table_name;
+    SQL
+
+    nullable_columns = ApplicationRecord.connection.select_all(nullable_columns_sql).rows
+    exceptions = [] # Add exceptions here of the form [table_name, column_name], although ideally there should be none.
+    expect(nullable_columns - exceptions).to eq([])
+  end
+end
 ```
 
-We make room for exceptions in case our application does one day contain a ternary system that is best expressed through a nullable boolean column.
+This can be expanded to other database-level integrity tests, such as making sure that every table has `created_at` and `updated_at` columns.
