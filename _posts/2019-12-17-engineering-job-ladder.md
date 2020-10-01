@@ -15,6 +15,7 @@ author: yoni_baciu
     <td>3<br/>Senior Software Engineer</td>
     <td>4<br/>Staff Software Engineer</td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>
@@ -24,7 +25,8 @@ author: yoni_baciu
     <td></td>
     <td>1<br/>Engineering Team Lead</td>
     <td>2<br/>Director of Engineering</td>
-    <td>3<br/>VP Engineering</td>
+    <td>3<br/>Sr. Director of Engineering</td>
+    <td>4<br/>VP Engineering</td>
   </tr>
 </table>
 
@@ -306,9 +308,9 @@ author: yoni_baciu
       <tr>
         <td>
           <h3>Level</h3>
-          <p class="job-level">3</p>
+          <p class="job-level">3/4</p>
           <h3>Title</h3>
-          <p>VP Engineering</p>
+          <p>Sr. Director of Engineering / VP Engineering</p>
           <h3>Experience</h3>
           <p>15+</p>
         </td>
