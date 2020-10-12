@@ -3,6 +3,7 @@
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
+    {% include analytics.html %}
     {% include meta.html %}
 
     <!--[if lt IE 9]>
@@ -47,7 +48,5 @@
         </footer>
       </div>
     </div>
-
-    {% include analytics.html %}
   </body>
 </html>
