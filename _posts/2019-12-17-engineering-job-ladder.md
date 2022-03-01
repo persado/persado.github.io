@@ -6,31 +6,53 @@ author: yoni_baciu
 ---
 
 <table class="job-ladder-table-summary">
-  <tr>
+  <tr class="job-ladder-ic-track">
     <td>
-      <b>Individual Contributor Track =&gt;</b>
+      <b>Individual Contributor Track<br/>Software Engineer</b>
     </td>
-    <td>1<br/>Software Engineer</td>
-    <td>2<br/>Software Engineer</td>
-    <td>3<br/>Senior Software Engineer</td>
-    <td>4<br/>Staff Software Engineer</td>
+    <td>1<br/><a href="#se-l1">Software Engineer I</a></td>
+    <td>2<br/><a href="#se-l2">Software Engineer II</a></td>
+    <td>3<br/><a href="#se-l3">Senior Software Engineer</a></td>
+    <td>4<br/><a href="#se-l4">Staff Software Engineer</a></td>
     <td></td>
     <td></td>
   </tr>
-  <tr>
+  <tr class="job-ladder-ic-track">
     <td>
-      <b>Manager Track =&gt;</b>
+      <b>Individual Contributor Track<br/>Reliability Engineer</b>
+    </td>
+    <td>1<br/><a href="#sre-l1">Reliability Engineer I</a></td>
+    <td>2<br/><a href="#sre-l2">Reliability Engineer II</a></td>
+    <td>3<br/><a href="#sre-l3">Senior Reliability Engineer I</a></td>
+    <td>4<br/><a href="#sre-l4">Senior Reliability Engineer II</a></td>
+    <td>5<br/><a href="#sre-l5">Staff Reliability Engineer</a></td>
+    <td></td>
+  </tr>
+  <tr class="job-ladder-manager-track">
+    <td>
+      <b>Manager Track<br/>Software Engineering</b>
     </td>
     <td></td>
     <td></td>
-    <td>1<br/>Engineering Team Lead</td>
-    <td>2<br/>Director of Engineering</td>
-    <td>3<br/>Sr. Director of Engineering</td>
-    <td>4<br/>VP Engineering</td>
+    <td>1<br/><a href="#m-l1">Engineering Team Lead</a></td>
+    <td>2<br/><a href="#m-l2">Director of Engineering</a></td>
+    <td>3<br/><a href="#m-l3">Sr. Director of Engineering</a></td>
+    <td>4<br/><a href="#m-l3">VP Engineering</a></td>
+  </tr>
+  <tr class="job-ladder-general-track">
+    <td>
+      <b>Persado General Ladder</b>
+    </td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
   </tr>
 </table>
 
-## Individual Track
+## Individual Contributor Track - Software Engineer
 
 <table class="job-ladder-table">
     <thead>
@@ -40,7 +62,7 @@ author: yoni_baciu
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr id="se-l1">
         <td>
           <h3>Level</h3>
           <p class="job-level">1</p>
@@ -83,7 +105,7 @@ author: yoni_baciu
           </ul>
         </td>
       </tr>
-      <tr>
+      <tr id="se-l2">
         <td>
           <h3>Level</h3>
           <p class="job-level">2</p>
@@ -129,7 +151,7 @@ author: yoni_baciu
           </ul>
         </td>
       </tr>
-      <tr>
+      <tr id="se-l3">
         <td>
           <h3>Level</h3>
           <p class="job-level">3</p>
@@ -175,7 +197,7 @@ author: yoni_baciu
           </ul>
         </td>
       </tr>
-      <tr>
+      <tr id="se-l4">
         <td>
           <h3>Level</h3>
           <p class="job-level">4</p>
@@ -221,6 +243,193 @@ author: yoni_baciu
     </tbody>
 </table>
 
+## Individual Contributor Track - Reliability Engineer
+
+<table class="job-ladder-table">
+    <thead>
+      <tr>
+        <th>Level / Title / Experience</th>
+        <th>Role and Competencies</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="sre-l1">
+        <td>
+          <h3>Level</h3>
+          <p class="job-level">1</p>
+          <h3>Title</h3>
+          <p>Reliability Engineer</p>
+          <h3>Experience</h3>
+          <p>0-3 years</p>
+        </td>
+        <td>
+          <h3>Role Highlights</h3>
+          <ul>
+            <li>You contribute to resolving issues that have defined solutions, while learning how services should be operated sustainably, reliably and efficiently.</li>
+            <li>You take direction from your team to automate and understand the systems.</li>
+            <li>You work within the scope of your team with specific guidance from your team lead.</li>
+          </ul>
+          <h3>Domain Expertise</h3>
+          <ul>
+            <li>You understand the basics of OS, networks and hardware and can quickly debug basic system issues.</li>
+            <li>You are learning to understand a typical full stack application (client/load-balancer/frontend/backend/DB) and use the right tools to troubleshoot system issues.</li>
+            <li>You ask questions to support your own continuous learning.</li>
+            <li>You learn from your own research and from those around you, seizing opportunities to increase your knowledge.</li>
+            <li>You primarily focus on improving your craft as an SRE</li>
+          </ul>
+          <h3>Programming / Problem Solving / Delivery</h3>
+          <ul>
+            <li>You understand scope of work before taking on tasks.</li>
+            <li>You recognize when you don't yet have the experience or knowledge to solve a problem and reach out to other SREs for help or guidance.</li>
+            <li>You prepare to work on new tasks by planning an approach ahead of time and confirming it's well thought out.</li>
+            <li>You write clean and readable code.</li>
+            <li>You verify your work by testing it yourself before asking others to review it.</li>
+            <li>You collect and incorporate feedback (such as code reviews) to ship your work.</li>
+            <li>You follow your team's best practices to bring your work to production.</li>
+            <li>You take ownership of your work after it's released and quickly address issues as they arise.</li>
+            <li>You participate in your team's planning and are learning to estimate how long work will take and how to prioritize tasks that add the most value.</li>
+          </ul>
+          <h3>Communication</h3>
+          <ul>
+            <li>You are learning to collaborate with team members in various roles (e.g. other SREs, software engineers)</li>
+            <li>You know when to keep digging and when to ask for help. You know when you are stuck and need to be unblocked.</li>
+            <li>When you learn something new, or figure out the solution to a problem, you let the team know and write documentation that helps others when they encounter similar issues if applicable.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr id="sre-l2">
+        <td>
+          <h3>Level</h3>
+          <p class="job-level">2</p>
+          <h3>Title</h3>
+          <p>Reliability Engineer</p>
+          <h3>Experience</h3>
+          <p>2-6 years</p>
+        </td>
+        <td>
+          <h3>Role Highlights</h3>
+          <ul>
+            <li>You execute on defined projects to achieve team-level goals.</li>
+            <li>You independently define the right solutions or use existing approaches to solve defined problems.</li>
+            <li>You prioritize the right things and when necessary you propose appropriate scope adjustments.</li>
+            <li>You effectively participate in the core processes of your team, including recommending and implementing process improvements.</li>            
+          </ul>
+          <h3>Domain Expertise</h3>
+          <ul>
+            <li>You understand OS, networks and hardware and can debug system issues and identify system bottlenecks.</li>
+            <li>You begin to understand how systems fail and work with teams to reduce the risks.</li>
+            <li>You are able to contribute towards making common software delivery processes safer and more efficient using established tooling such as containers or deployment pipelines.</li>
+          </ul>
+          <h3>Programming / Problem Solving / Delivery</h3>
+          <ul>
+            <li>You translate ideas into clear code, written to be read as well as executed.</li>
+            <li>Your code is free of glaring errors - bugs are in edge cases or design, not mainline paths - and is well documented and well tested with appropriate use of manual vs automated tests.</li>
+            <li>You code with both high throughput and appropriately high quality.</li>
+          </ul>
+          <h3>Communication</h3>
+          <ul>
+            <li>You can effectively collaborate to get work done.</li>
+            <li>You work with your manager to manage conflict with empathy and cooperation in mind.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr id="sre-l3">
+        <td>
+          <h3>Level</h3>
+          <p class="job-level">3</p>
+          <h3>Title</h3>
+          <p>Senior Reliability Engineer</p>
+          <h3>Experience</h3>
+          <p>5-8 years</p>
+        </td>
+        <td>
+          <h3>Role Highlights</h3>
+          <ul>
+            <li>You independently identify the right solutions to solve ambiguous, open-ended problems.</li>
+            <li>You independently identify and deliver solutions that ensure the resilience and reliability across multiple systems.</li>
+            <li>You actively level up less-experienced members of your team by helping them with their craft, providing guidance, and setting a good example.</li>
+          </ul>
+          <h3>Domain Expertise</h3>
+          <ul>
+            <li>You understand OS or networks and hardware well and can quickly debug complex issues and identify the major system bottlenecks.</li>
+            <li>You are able to identify opportunities to improve system’s reliability such as utilization, scalability, efficiency and drive the implementation.</li>
+            <li>You know how complex distributed systems fail and look for ways to protect the software and system.</li>
+            <li>You contribute to interviewing and assessing candidates to help us build a diverse and talented team.</li>
+          </ul>
+          <h3>Programming / Problem Solving / Delivery</h3>
+          <ul>
+            <li>You write code that captures the essential nature of the solution and is appropriately flexible, reusable, efficient, and adaptable to changing requirements.</li>
+            <li>You have a strong awareness of the ecosystem of tools and libraries available to you.</li>
+            <li>You ensure high code quality in code reviews.</li>
+          </ul>
+          <h3>Communication</h3>
+          <ul>
+            <li>You avoid blame and solve the right problems, disagreeing and committing when necessary.</li>
+            <li>You proactively share information so the right people are informed and aligned.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr id="sre-l4">
+        <td>
+          <h3>Level</h3>
+          <p class="job-level">4</p>
+          <h3>Title</h3>
+          <p>Senior Reliability Engineer</p>
+          <h3>Experience</h3>
+          <p>7+ years</p>
+        </td>
+        <td>
+          <h3>Role Highlights</h3>
+          <ul>
+            <li>You autonomously deliver multi-phase, cross-team reliability efforts.</li>
+            <li>You are an expert at identifying the right solutions to solve ambiguous, open-ended problems that require tough prioritization.</li>
+            <li>You actively level up less-experienced members of your team by helping them with their craft, providing guidance, and setting a good example.</li>
+          </ul>
+          <h3>Domain Expertise</h3>
+          <ul>
+            <li>You deeply understand and can improve the reliability of most of the systems utilized at Persado.</li>
+            <li>You can prioritize fixing major system reliability issues and with appropriate levels of failure for the long term roadmap vs daily problems.</li>
+            <li>You contribute to interviewing and assessing candidates to help us build a diverse and talented team.</li>
+          </ul>
+          <h3>Programming / Problem Solving / Delivery</h3>
+          <ul>
+            <li>You write code that captures the essential nature of the solution and is appropriately flexible, reusable, efficient, and adaptable to changing requirements.</li>
+            <li>You have a strong awareness of the ecosystem of tools and libraries available to you.</li>
+          </ul>
+          <h3>Communication</h3>
+          <ul>
+            <li>You foster effective communication across the team and promote inclusive culture.</li>
+            <li>You tailor your message to your audience, presenting it clearly and concisely at the right level.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr id="sre-l5">
+        <td>
+          <h3>Level</h3>
+          <p class="job-level">5</p>
+          <h3>Title</h3>
+          <p>Staff Reliability Engineer</p>
+          <h3>Experience</h3>
+          <p>+10 years</p>
+        </td>
+        <td>
+          <h3>Role Highlights</h3>
+          <ul>
+            <li>You save the planet from alien invasions.</li>
+          </ul>
+          <h3>Domain Expertise</h3>
+          <ul>
+            <li>You have laser eyes.</li>
+            <li>You can fly at supersonic speed.</li>
+            <li>You have supermassive strength.</li>
+            <li>You can time travel.</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+</table>
+
+
 ## Manager Track
 
 <table class="job-ladder-table">
@@ -231,7 +440,7 @@ author: yoni_baciu
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr id="m-l1">
         <td>
           <h3>Level</h3>
           <p class="job-level">1</p>
@@ -265,11 +474,11 @@ author: yoni_baciu
             <li>You make sure mentors have regular 1:1 with their mentees.</li>
             <li>You regularly communicate accurate status of the product or projects you own to all stakeholders.</li>
             <li>You contribute ideas and suggestions to the product managers constructively.</li>
-            <li>You do not have an “us vs. them” mentality with other stakeholders and you make sure none in your team does as well.</li>
+            <li>You do not have an "us vs. them" mentality with other stakeholders and you make sure no one in your team does as well.</li>
           </ul>
         </td>
       </tr>
-      <tr>
+      <tr id="m-l2">
         <td>
           <h3>Level</h3>
           <p class="job-level">2</p>
@@ -305,7 +514,7 @@ author: yoni_baciu
           </ul>
         </td>
       </tr>
-      <tr>
+      <tr id="m-l3">
         <td>
           <h3>Level</h3>
           <p class="job-level">3/4</p>
@@ -341,3 +550,8 @@ author: yoni_baciu
     </tbody>
 </table>
 
+<div class="small-font">
+  SRE job ladder is based on the SRE job ladder by <a href="https://dropbox.github.io/dbx-career-framework/ic1_reliability_engineer.html">Dropbox</a>
+</div>
+<p></p>
+<p></p>

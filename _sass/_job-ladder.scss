@@ -27,6 +27,14 @@ table.job-ladder-table-summary {
   font-size: 75%;
   word-break: break-word;
   
+  .job-ladder-ic-track {
+    background-color: aquamarine;
+  }
+
+  .job-ladder-manager-track {
+    background-color: lightblue;
+  }
+
   td {
     &:first-child {
       width: 20%;
@@ -35,6 +43,10 @@ table.job-ladder-table-summary {
     border: 1px solid black;
     padding: 10px;
   }
+}
+
+.small-font {
+  font-size: 10px;
 }
 
 @media screen and (max-width: 640px) {
