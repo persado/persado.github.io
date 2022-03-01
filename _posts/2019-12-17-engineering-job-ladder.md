@@ -266,8 +266,7 @@ author: yoni_baciu
           <h3>Role Highlights</h3>
           <ul>
             <li>You contribute to resolving issues that have defined solutions, while learning how services should be operated sustainably, reliably and efficiently.</li>
-            <li>You take direction from your team to automate and understand the systems.</li>
-            <li>You work within the scope of your team with specific guidance from your team lead.</li>
+            <li>You take specific direction from your teammates to understand the systems in scope for your team and to contribute to the team's maintenance and automation efforts.</li>
           </ul>
           <h3>Domain Expertise</h3>
           <ul>
@@ -279,9 +278,9 @@ author: yoni_baciu
           </ul>
           <h3>Programming / Problem Solving / Delivery</h3>
           <ul>
-            <li>You understand scope of work before taking on tasks.</li>
-            <li>You recognize when you don't yet have the experience or knowledge to solve a problem and reach out to other SREs for help or guidance.</li>
-            <li>You prepare to work on new tasks by planning an approach ahead of time and confirming it's well thought out.</li>
+            <li>You understand the scope of work before taking on tasks.</li>
+            <li>You recognize when you don't yet have the experience or knowledge to solve a problem and reach out to others for help or guidance.</li>
+            <li>You prepare to work on new tasks by thoughtfully planning an approach in advance, and by confirming its validity with your team.</li>
             <li>You write clean and readable code.</li>
             <li>You verify your work by testing it yourself before asking others to review it.</li>
             <li>You collect and incorporate feedback (such as code reviews) to ship your work.</li>
@@ -316,7 +315,7 @@ author: yoni_baciu
           </ul>
           <h3>Domain Expertise</h3>
           <ul>
-            <li>You understand OS, networks and hardware and can debug system issues and identify system bottlenecks.</li>
+            <li>You understand operating systems, networking and hardware well enough to debug system issues and identify system bottlenecks.</li>
             <li>You begin to understand how systems fail and work with teams to reduce the risks.</li>
             <li>You are able to contribute towards making common software delivery processes safer and more efficient using established tooling such as containers or deployment pipelines.</li>
           </ul>
@@ -351,14 +350,14 @@ author: yoni_baciu
           </ul>
           <h3>Domain Expertise</h3>
           <ul>
-            <li>You understand OS or networks and hardware well and can quickly debug complex issues and identify the major system bottlenecks.</li>
+            <li>You understand operating systems, networking and hardware well enough to quickly debug complex issues and identify the major system bottlenecks.</li>
             <li>You are able to identify opportunities to improve system’s reliability such as utilization, scalability, efficiency and drive the implementation.</li>
             <li>You know how complex distributed systems fail and look for ways to protect the software and system.</li>
             <li>You contribute to interviewing and assessing candidates to help us build a diverse and talented team.</li>
           </ul>
           <h3>Programming / Problem Solving / Delivery</h3>
           <ul>
-            <li>You write code that captures the essential nature of the solution and is appropriately flexible, reusable, efficient, and adaptable to changing requirements.</li>
+            <li>You write code that addresses the heart of the matter, avoiding over-engineered solutions, but that is also appropriately flexible, reusable, efficient and adaptable to changing requirements.</li>
             <li>You have a strong awareness of the ecosystem of tools and libraries available to you.</li>
             <li>You ensure high code quality in code reviews.</li>
           </ul>
@@ -393,12 +392,12 @@ author: yoni_baciu
           </ul>
           <h3>Programming / Problem Solving / Delivery</h3>
           <ul>
-            <li>You write code that captures the essential nature of the solution and is appropriately flexible, reusable, efficient, and adaptable to changing requirements.</li>
+            <li>You write code that addresses the heart of the matter, avoiding over-engineered solutions, but that is also appropriately flexible, reusable, efficient and adaptable to changing requirements</li>
             <li>You have a strong awareness of the ecosystem of tools and libraries available to you.</li>
           </ul>
           <h3>Communication</h3>
           <ul>
-            <li>You foster effective communication across the team and promote inclusive culture.</li>
+            <li>You foster effective communication across teams and promote inclusivity.</li>
             <li>You tailor your message to your audience, presenting it clearly and concisely at the right level.</li>
           </ul>
         </td>
@@ -410,7 +409,7 @@ author: yoni_baciu
           <h3>Title</h3>
           <p>Staff Reliability Engineer</p>
           <h3>Experience</h3>
-          <p>+10 years</p>
+          <p>10+ years</p>
         </td>
         <td>
           <h3>Role Highlights</h3>
