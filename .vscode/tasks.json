@@ -12,7 +12,7 @@
         },
       },
       {
-        "command": "rvm use 2.5.1; bundle exec jekyll serve",
+        "command": "rvm use 2.5.1; bundle exec jekyll serve --host localhost",
         "type": "shell",
         "label": "Jekyll - Run Dev Server",
         "options": {
