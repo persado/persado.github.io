@@ -1,12 +1,11 @@
 ---
 layout: post
 title: Bash-ing your network with /dev/tcp
-excerpt: In Bash, `/dev/tcp` is a special file that allows you to establish network connections using the TCP/IP protocol. It provides a simple way to communicate with remote servers over a network.
+excerpt: "In Bash, `/dev/tcp` is a special file that allows you to establish network connections using the TCP/IP protocol. It provides a simple way to communicate with remote servers over a network.
 
 Using `/dev/tcp`, you can open a network socket and read from or write to it, similar to how you would read from or write to a file. This feature is primarily available in Bash shells on Unix-like systems.
 
-It can be accessed for multiple reasons but the basic operation of it is to open a raw TCP stream.
-/dev/udp is also valid.
+/dev/udp is also valid."
 author: stefanos_kalandaridis
 categories:
 - troubleshooting
@@ -24,7 +23,6 @@ In Bash, `/dev/tcp` is a special file that allows you to establish network conne
 
 Using `/dev/tcp`, you can open a network socket and read from or write to it, similar to how you would read from or write to a file. This feature is primarily available in Bash shells on Unix-like systems.
 
-It can be accessed for multiple reasons but the basic operation of it is to open a raw TCP stream.
 /dev/udp is also valid.
 
 - [Port Scanning](#port-scanning)
@@ -46,9 +44,11 @@ kubectl exec -it svc/random-service -- bash
 $ echo < /dev/tcp/other-service.namespace.svc.cluster.local/7777 && echo "open" || echo "closed"
 ```
 
-#### You can make a port scanner with a one liner (and it's pretty fast)
+#### You can make a port scanner with it (and it's pretty fast)
 ```
-for port in {1..8888}; do timeout 0.5 echo -n 2>/dev/null < /dev/tcp/127.0.0.1/$port && echo "$port/tcp open"; done
+for port in {1..8888}; do
+  echo -n 2>/dev/null < /dev/tcp/127.0.0.1/$port && echo "$port/tcp open"
+done
 ```
 
 ### Read TCP stream
@@ -58,22 +58,23 @@ cat < /dev/tcp/time.nist.gov/13
 ```
 
 ### File Transfer
-#### Sender
+#### Option 1
+Sender
 ```
 nc -lvnp 7777 < file.txt
 ```
-#### Receiver
+Receiver
 ```
 cat < /dev/tcp/sender/7777 > file.txt
 ```
 
-#### Alternatively 
+#### Option 2
 
-#### Receiver
+Receiver
 ```
 nc -lvnp 7777 > file.txt
 ```
-#### Sender
+Sender
 ```
 cat file.txt > /dev/tcp/receiver/7777
 ```
@@ -97,6 +98,7 @@ cat <&5
 ```
 
 
-#### References 
-https://tldp.org/LDP/abs/html/devref1.html
-https://w0lfram1te.com/exploring-dev-tcp
+
+### References 
+- [https://tldp.org/LDP/abs/html/devref1.html](https://tldp.org/LDP/abs/html/devref1.html)
+- [https://w0lfram1te.com/exploring-dev-tcp](https://w0lfram1te.com/exploring-dev-tcp)

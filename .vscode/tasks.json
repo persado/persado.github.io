@@ -7,9 +7,16 @@
         "label": "Jekyll - Install Dev Server",
         "options": {
           "shell": {
-            "args": ["--login"]
+            "args": [
+              "--login"
+            ]
           }
         },
+        "problemMatcher": [],
+        "group": {
+          "kind": "test",
+          "isDefault": true
+        }
       },
       {
         "command": "rvm use 2.5.1; bundle exec jekyll serve --host localhost",
@@ -17,9 +24,11 @@
         "label": "Jekyll - Run Dev Server",
         "options": {
           "shell": {
-            "args": ["--login"]
+            "args": [
+              "--login"
+            ]
           }
-        },
-      },
+        }
+      }
     ]
   }
