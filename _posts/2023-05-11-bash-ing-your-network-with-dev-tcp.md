@@ -1,7 +1,12 @@
 ---
 layout: post
 title: Bash-ing your network with /dev/tcp
-excerpt: .
+excerpt: In Bash, `/dev/tcp` is a special file that allows you to establish network connections using the TCP/IP protocol. It provides a simple way to communicate with remote servers over a network.
+
+Using `/dev/tcp`, you can open a network socket and read from or write to it, similar to how you would read from or write to a file. This feature is primarily available in Bash shells on Unix-like systems.
+
+It can be accessed for multiple reasons but the basic operation of it is to open a raw TCP stream.
+/dev/udp is also valid.
 author: stefanos_kalandaridis
 categories:
 - troubleshooting
@@ -13,9 +18,7 @@ tags:
 - http
 - security
 ---
-# bash /dev/tcp special file
-
-### /dev/tcp is a file descriptor of bash shell
+## /dev/tcp is a file descriptor of bash shell
 
 In Bash, `/dev/tcp` is a special file that allows you to establish network connections using the TCP/IP protocol. It provides a simple way to communicate with remote servers over a network.
 
@@ -24,11 +27,11 @@ Using `/dev/tcp`, you can open a network socket and read from or write to it, si
 It can be accessed for multiple reasons but the basic operation of it is to open a raw TCP stream.
 /dev/udp is also valid.
 
-[Port Scanning](#port-scanning)
-[Read TCP stream](#read-tcp-stream)
-[File Transfer](#file-transfer)
-[Reverse Shell](#reverse-shell)
-[HTTP Requests](#http-requests)
+- [Port Scanning](#port-scanning)
+- [Read TCP stream](#read-tcp-stream)
+- [File Transfer](#file-transfer)
+- [Reverse Shell](#reverse-shell)
+- [HTTP Requests](#http-requests)
 
 ### Port scanning
 #### One of the most common uses of it is to check if a port is open in a remote host
